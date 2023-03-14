@@ -13,6 +13,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - Matrix
 - RansomLetter
 - ReverseOdd
+- StringIncrementer
 - TextToNum
 - Unmix
 ## [noname](google.com)
