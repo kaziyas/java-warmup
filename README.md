@@ -15,6 +15,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - ReverseOdd
 - StringIncrementer
 - SwapTwo
+- SymmetricalRug
 - TextToNum
 - Unmix
 ## [noname](google.com)

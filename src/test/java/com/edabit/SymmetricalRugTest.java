@@ -1,0 +1,74 @@
+package com.edabit;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+/**
+ * @author Yaser Kazerooni (yaser.kazerooni@gmail.com)
+ * @version 1.0 2023.03.16
+ * @since 1.0
+ */
+public class SymmetricalRugTest {
+
+  @Test
+  public void test01() {
+    assertEquals(1, SymmetricalRug.countLayers(new String[] {"AAA"}));
+  }
+
+  @Test
+  public void test02() {
+    assertEquals(1, SymmetricalRug.countLayers(new String[] {"AAAA", "AAAA", "AAAA"}));
+  }
+
+  @Test
+  public void test03() {
+    assertEquals(2, SymmetricalRug.countLayers(new String[] {"AAAA", "ABBA", "AAAA"}));
+  }
+
+  @Test
+  public void test04() {
+    assertEquals(2, SymmetricalRug.countLayers(new String[] {"AAAAAAAAA", "ABBBBBBBA", "ABBBBBBBA", "ABBBBBBBA", "AAAAAAAAA"}));
+  }
+
+  @Test
+  public void test05() {
+    assertEquals(3, SymmetricalRug.countLayers(new String[] {"AAAAAAAAA", "ABBBBBBBA", "ABBAAABBA", "ABBBBBBBA", "AAAAAAAAA"}));
+  }
+
+  @Test
+  public void test06() {
+    assertEquals(3, SymmetricalRug.countLayers(new String[] {"AAAAAAAAA", "ABBBBBBBA", "ABCCCCCBA", "ABBBBBBBA", "AAAAAAAAA"}));
+  }
+
+  @Test
+  public void test07() {
+    assertEquals(5, SymmetricalRug.countLayers(new String[] {"AAAAAAAAAAA", "AABBBBBBBAA", "AABCCCCCBAA", "AABCAAACBAA", "AABCADACBAA", "AABCAAACBAA", "AABCCCCCBAA", "AABBBBBBBAA", "AAAAAAAAAAA"}));
+  }
+
+  @Test
+  public void test08() {
+    assertEquals(5, SymmetricalRug.countLayers(new String[] {"AAAAAAAAAAA", "AABBBBBBBAA", "AABCCCCCBAA", "AABCAAACBAA", "AABCABACBAA", "AABCAAACBAA", "AABCCCCCBAA", "AABBBBBBBAA", "AAAAAAAAAAA"}));
+  }
+
+  @Test
+  public void test09() {
+    assertEquals(4, SymmetricalRug.countLayers(new String[] {"AAAAAAAAAAA", "AABBBBBBBAA", "AABCCCCCBAA", "AABCDDDCBAA", "AABCDDDCBAA", "AABCDDDCBAA", "AABCCCCCBAA", "AABBBBBBBAA", "AAAAAAAAAAA"}));
+  }
+
+  @Test
+  public void test10() {
+    assertEquals(6, SymmetricalRug.countLayers(new String[] {"FFFFFFFFFFFFFFFFFFFFFFFFF", "FFFFFFFFFFFFFFFFFFFFFFFFF", "FFFFGGGGGGGGGGGGGGGGGFFFF", "FFFFGGGAAAAAAAAAAAGGGFFFF", "FFFFGGGAABBBBBBBAAGGGFFFF", "FFFFGGGAABCCCCCBAAGGGFFFF", "FFFFGGGAABCDDDCBAAGGGFFFF", "FFFFGGGAABCDDDCBAAGGGFFFF", "FFFFGGGAABCDDDCBAAGGGFFFF", "FFFFGGGAABCCCCCBAAGGGFFFF", "FFFFGGGAABBBBBBBAAGGGFFFF", "FFFFGGGAAAAAAAAAAAGGGFFFF", "FFFFGGGGGGGGGGGGGGGGGFFFF", "FFFFFFFFFFFFFFFFFFFFFFFFF", "FFFFFFFFFFFFFFFFFFFFFFFFF"}));
+  }
+
+  @Test
+  public void test11() {
+    assertEquals(5, SymmetricalRug.countLayers(new String[] {"TTTTTTTTTTTTTT", "TEEEEEEEEEEEET", "TESSSSSSSSSSET", "TESHHHHHHHHSET", "TESHAAAAAAHSET", "TESHHHHHHHHSET", "TESSSSSSSSSSET", "TEEEEEEEEEEEET", "TTTTTTTTTTTTTT"}));
+  }
+
+  @Test
+  public void test12() {
+    assertEquals(6, SymmetricalRug.countLayers(new String[] {"TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT", "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT", "TTEEEEEEEEEEEEEEEEEEEEEEEEEEEETT", "TTEEEEEEEEEEEEEEEEEEEEEEEEEEEETT", "TTEESSSSSSSSSSSSSSSSSSSSSSSSEETT", "TTEESSSSSSSSSSSSSSSSSSSSSSSSEETT", "TTEESSHHHHHHHHHHHHHHHHHHHHSSEETT", "TTEESSHHHHHHHHHHHHHHHHHHHHSSEETT", "TTEESSHHAAAAAAAAAAAAAAAAHHSSEETT", "TTEESSHHAAAAAAAAAAAAAAAAHHSSEETT", "TTEESSHHAADDDDDXDDDDDDAAHHSSEETT", "TTEESSHHAAAAAAAAAAAAAAAAHHSSEETT", "TTEESSHHAAAAAAAAAAAAAAAAHHSSEETT", "TTEESSHHHHHHHHHHHHHHHHHHHHSSEETT", "TTEESSHHHHHHHHHHHHHHHHHHHHSSEETT", "TTEESSSSSSSSSSSSSSSSSSSSSSSSEETT", "TTEESSSSSSSSSSSSSSSSSSSSSSSSEETT", "TTEEEEEEEEEEEEEEEEEEEEEEEEEEEETT", "TTEEEEEEEEEEEEEEEEEEEEEEEEEEEETT", "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT", "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"}));
+  }
+
+}
