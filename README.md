@@ -8,6 +8,7 @@ A daily coding practice in Java helps me become a better Java developer!
 ## [edabit](https://edabit.com/)
 - Abbreviated
 - ApocalypticNumbers
+- AlmostPalindrome
 - BuildingUpAWord
 - DisariumNumber
 - Matrix
