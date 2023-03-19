@@ -15,6 +15,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - PersonalIdNumber
 - RansomLetter
 - ReverseOdd
+- SevenBoom
 - StringIncrementer
 - SwapTwo
 - SymmetricalRug
