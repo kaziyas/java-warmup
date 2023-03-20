@@ -17,6 +17,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - ReverseOdd
 - SevenBoom
 - StringIncrementer
+- SumOfTwoNumbersTest
 - SwapTwo
 - SymmetricalRug
 - TextToNum
