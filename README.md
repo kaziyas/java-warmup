@@ -11,6 +11,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - AlmostPalindrome
 - BuildingUpAWord
 - DisariumNumber
+- GrowingAndShrinkingPotions
 - Matrix
 - PersonalIdNumber
 - RansomLetter
