@@ -19,7 +19,7 @@ public class ReorderDigits {
                 Arrays.sort(chars, Comparator.reverseOrder());
             }
             String str = Arrays.stream(chars).map(String::valueOf).collect(Collectors.joining());
-            return Integer.valueOf(str);
+            return Integer.parseInt(str);
         }).toArray();
     }
 }
