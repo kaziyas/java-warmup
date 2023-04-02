@@ -19,6 +19,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - ReorderDigits
 - ReverseOdd
 - SevenBoom
+- Stretches
 - StringIncrementer
 - SumOfTwoNumbersTest
 - SwapTwo
