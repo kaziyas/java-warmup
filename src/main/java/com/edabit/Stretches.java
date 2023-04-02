@@ -1,7 +1,6 @@
 package com.edabit;
 
 import java.util.Arrays;
-import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
 /**
@@ -12,6 +11,6 @@ import java.util.stream.IntStream;
 public class Stretches {
     public static int largestGap(int[] numbers) {
         Arrays.sort(numbers);
-        return IntStream.iterate(numbers.length - 1, i -> i > 0, i -> i - 1).mapToObj(i -> numbers[i] - numbers[i - 1]).mapToInt(e -> e).max().getAsInt();
+        return IntStream.range(0, numbers.length - 1).map(i -> numbers[i + 1] - numbers[i]).max().getAsInt();
     }
 }
