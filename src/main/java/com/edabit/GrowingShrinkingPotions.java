@@ -8,21 +8,23 @@ package com.edabit;
 public class GrowingShrinkingPotions {
     public static String afterPotion(String str) {
         String[] array = str.split("");
-        String[] result = array.clone();
         for (int i = 0; i < array.length; i++) {
             switch (array[i]) {
                 case "A": {
-                    result[i] = "";
-                    result[i - 1] = String.valueOf(Integer.parseInt(result[i - 1]) + 1);
+                    array[i - 1] = String.valueOf(Integer.parseInt(array[i - 1]) + 1);
                     break;
                 }
                 case "B": {
-                    result[i] = "";
-                    result[i - 1] = String.valueOf(Integer.parseInt(result[i - 1]) - 1);
+                    array[i - 1] = String.valueOf(Integer.parseInt(array[i - 1]) - 1);
                     break;
+                }
+                default: {
+                    if (array[i].matches("[C-Z]||[a-z]")) {
+                        throw new IllegalStateException("Unexpected value: " + array[i]);
+                    }
                 }
             }
         }
-        return String.join("", result);
+        return String.join("", array).replaceAll("A","").replaceAll("B", "");
     }
 }

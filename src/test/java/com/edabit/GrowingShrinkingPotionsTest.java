@@ -46,4 +46,14 @@ public class GrowingShrinkingPotionsTest {
     public void test7() {
         assertEquals("477510", GrowingShrinkingPotions.afterPotion("3A78B59A"));
     }
+
+    @Test(expected = IllegalStateException.class)
+    public void test8() {
+        GrowingShrinkingPotions.afterPotion("3C8A");
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void test9() {
+        GrowingShrinkingPotions.afterPotion("3a8b");
+    }
 }
