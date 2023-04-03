@@ -18,6 +18,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - RansomLetter
 - ReorderDigits
 - ReverseOdd
+- SelectLetters
 - SevenBoom
 - Stretches
 - StringIncrementer
