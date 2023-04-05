@@ -12,12 +12,12 @@ import java.util.MissingResourceException;
  * @project java-warmup
  */
 public class GeneralMessageTranslator {
-    private static final List<String> bundles = Collections.unmodifiableList(Arrays.asList("com.kaziyas.account", "com.kaziyas.shipping"));
+    private static final List<String> bundles = Collections.unmodifiableList(Arrays.asList("com.kaziyas.bundle.account", "com.kaziyas.bundle.shipping"));
     private static final GeneralResourceBundle resourceBundle = new GeneralResourceBundle(bundles);
 
     public static String getMessage(String key, String description, List<String> parameters) {
-        String message = "";
-        Object[] args = (Object[]) null;
+        String message;
+        Object[] args = null;
 
         if (parameters != null)
             args = parameters.toArray();
