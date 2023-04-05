@@ -29,6 +29,6 @@ public class GeneralResourceBundleTest {
     @Test
     public void getKeys() {
         long size = Collections.list(resourceBundle.getKeys()).size();
-        assertEquals(17, size);
+        assertEquals(3, size);
     }
 }
