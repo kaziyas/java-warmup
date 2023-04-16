@@ -16,6 +16,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - Matrix
 - PersonalIdNumber
 - RansomLetter
+- RemoveRepeats
 - ReorderDigits
 - ReverseOdd
 - SelectLetters
