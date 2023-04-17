@@ -14,6 +14,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - DisariumNumber
 - GrowingAndShrinkingPotions
 - Matrix
+- ParenthesesClusters
 - PersonalIdNumber
 - RansomLetter
 - RemoveRepeats
