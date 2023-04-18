@@ -12,6 +12,7 @@ A daily coding practice in Java helps me become a better Java developer!
 - BuildingUpAWord
 - ConsecutiveNumbers
 - DisariumNumber
+- DuplicateCount
 - GrowingAndShrinkingPotions
 - Matrix
 - ParenthesesClusters
